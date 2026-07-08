@@ -35,9 +35,13 @@ D --> E[DB 저장]
 
 
 ```mermaid
-flowchart TD
-A[큐브 사용] --> B[PRNG]
-B --> C[가중치 계산]
-C --> D[옵션 생성]
-D --> E[DB 저장]
+sequenceDiagram
+    participant User
+    participant Server
+    participant DB
+
+    User->>Server: 큐브 사용
+    Server->>DB: 로그 저장
+    DB-->>Server: 저장 완료
+    Server-->>User: 결과 반환
 ```
