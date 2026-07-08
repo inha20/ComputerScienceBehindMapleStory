@@ -52,3 +52,8 @@ class Player
 class Item
 Player --> Item
 ```
+
+```mermaid
+erDiagram
+PLAYER ||--o{ ITEM : owns
+```
