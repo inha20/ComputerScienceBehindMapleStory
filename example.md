@@ -46,8 +46,8 @@ sequenceDiagram
     Server-->>User: 결과 반환
 ```
 
-classDiagram
+```classDiagram
 class Player
 class Item
 Player --> Item
-
+```
