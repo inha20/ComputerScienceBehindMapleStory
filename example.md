@@ -45,3 +45,9 @@ sequenceDiagram
     DB-->>Server: 저장 완료
     Server-->>User: 결과 반환
 ```
+
+classDiagram
+class Player
+class Item
+Player --> Item
+
