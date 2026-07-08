@@ -57,3 +57,26 @@ Player --> Item
 erDiagram
 PLAYER ||--o{ ITEM : owns
 ```
+
+```mermaid
+stateDiagram-v2
+Idle --> Running
+Running --> Finished
+```
+
+```mermaid
+gitGraph
+commit
+branch feature
+checkout feature
+commit
+checkout main
+merge feature
+```
+```mermaid
+pie
+title 확률
+"레전드리" : 5
+"유니크" : 15
+"에픽" : 80
+```
